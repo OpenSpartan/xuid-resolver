@@ -20,13 +20,32 @@ You will also need to provide a **client ID registration** with Microsoft Entra 
 
 If you already have a registered application, take note of the client ID and set it in your environent as `OPSP_XR_CLIENT_ID`.
 
-- **macOS/Linux**: `export OPSP_XR_CLIENT_ID=your_client_id`
-- **Windows**: `$env:OPSP_XR_CLIENT_ID = "your_client_id"`
+**macOS/Linux**:
+
+```bash
+export OPSP_XR_CLIENT_ID=your_client_id
+```
+
+**Windows**:
+
+```bash
+$env:OPSP_XR_CLIENT_ID = "your_client_id"
+```
 
 Depending on the platform, you can also make the changes permanent (you don't need to set the client ID on every terminal launch):
 
-- **macOS/Linux**: `echo 'export OPSP_XR_CLIENT_ID=your_client_id' >> ~/.bashrc` (change the file if you use a different shell, like `zsh`)
-- **Windows**: `[Environment]::SetEnvironmentVariable("OPSP_XR_CLIENT_ID", "your_client_id", "User")`
+**macOS/Linux**
+
+```bash
+echo 'export OPSP_XR_CLIENT_ID=your_client_id' >> ~/.bashrc
+```
+Change the file if you use a different shell, like `zsh`.
+
+**Windows**
+
+```bash
+[Environment]::SetEnvironmentVariable("OPSP_XR_CLIENT_ID", "your_client_id", "User")
+```
 
 Once completed, you can call the tool from your terminal application:
 
